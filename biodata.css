@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+:root {
+    --bg: #222;
+    --darkMain: #a11e34;
+    --lightMain:#fa4267;
+    --txt-clr: #fff;
+    --bx-shadow: 4px 7px 10px rgba(0, 0, 0, 0.1),
+        4px 7px 30px rgba(0, 0, 0, 0.1)
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: var(--bg);
+}
+
+.wrapper {
+    max-width: 1250px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+header {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header .logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+header .logo .logo-text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: var(--txt-clr);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+
+header nav .nav-links {
+    z-index: 10;
+    position: relative;
+}
+
+header nav .nav-links a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    color: var(--txt-clr);
+}
+
+header nav .nav-links a:hover {
+    color: var(--lightMain);
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    max-height: 80vh;
+}
+.content{
+    width:100%;
+    max-width: 700px;
+    border: 1px solid rgba(170, 170, 170, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--bx-shadow);
+}
+
+.pic{
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(170, 170, 170, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+.pic img{
+    max-width: 500px;
+    transform: translateY(-70px);
+    width:100%;
+}
+
+main h1{
+    color: var(--lightMain);
+    font-size: 1.8em;
+    padding: 10px 0;
+    border-bottom: 2px solid var(--lightMain);
+}
+
+
+main ul{
+    margin-left: 15px;
+}
+
+main ul li{
+    color: var(--txt-clr);
+}
+
+
+
+

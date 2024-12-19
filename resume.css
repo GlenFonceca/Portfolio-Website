@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+:root {
+    --bg: #222;
+
+    --darkMain: #a11e34;
+    --lightMain:#fa4267;
+    --txt-clr: #fff;
+    --bx-shadow: 4px 7px 10px rgba(0, 0, 0, 0.1),
+        4px 7px 30px rgba(0, 0, 0, 0.1)
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    background: var(--bg);
+}
+
+.wrapper {
+    max-width: 1250px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--txt-clr);
+
+}
+
+header {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header .logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+header .logo .logo-text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: var(--txt-clr);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+
+header nav .nav-links {
+    z-index: 10;
+    position: relative;
+}
+
+header nav .nav-links a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    color: var(--txt-clr);
+}
+
+header nav .nav-links a:hover {
+    color: var(--lightMain);
+}
+
+
+main * {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+
+main {
+    border: 1px solid rgba(170, 170, 170, 0.2);
+    max-width: 800px;
+    background: var(--bg);
+    color: var(--txt-clr);
+    border-radius: 10px;
+    box-shadow: var(--bx-shadow);
+    padding: 30px;
+    margin: 40px auto;
+}
+
+main .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .top .personal-info h1 {
+    font-size: 2em;
+    color: var(--lightMain);
+    font-weight: 700;
+}
+
+main .top .personal-info h3 {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.45;
+    color: var(--txt-clr);
+}
+
+main .top .personal-info h3 i {
+    margin-right: 5px;
+}
+
+main .top .pfp {
+    margin: 10px 0;
+    border: 1px solid var(--lightMain);
+    flex-shrink: 0;
+    width: 120px;
+    height: 140px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+main .top .pfp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(2px,5px);
+}
+
+th {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+
+main section h1 {
+    color: var(--lightMain);
+    font-size: 1.25em;
+    padding: 10px 0 5px;
+    font-weight: 700;
+    border-bottom: 2px solid var(--lightMain);
+    margin: 10px 0;
+}
+
+main section table th {
+    text-align: left;
+}
+
+main section table.edu {
+    width: 100%;
+}
+
+main section table.edu tr td {
+    padding: 5px 10px;
+}
+
+main section .edu tr td {
+    padding: 5px 0;
+}
+
+main section .edu tr th div {
+    font-weight: 300;
+}
+
+main section .internship h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section .internship h3 span {
+    font-weight: 500;
+}
+
+main section .project h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav .nav-links a {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    main .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .top .personal-info h1 {
+        font-size: 1.8rem;
+    }
+
+    main .top .personal-info h3 {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    main .top .pfp {
+        width: 100px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    main section h1 {
+        font-size: 1.1rem;
+    }
+
+    main section table.edu tr td {
+        padding: 5px 8px;
+    }
+
+    main section .internship h3,
+    main section .project h3 {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 0;
+    }
+
+    header nav .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    main .top .personal-info h1 {
+        font-size: 1.5rem;
+    }
+
+    main .top .personal-info h3 {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    main .top .pfp {
+        width: 80px;
+        height: 100px;
+    }
+
+    main section h1 {
+        font-size: 1rem;
+    }
+
+    main section table.edu tr td {
+        padding: 5px 6px;
+    }
+
+    main section .internship h3,
+    main section .project h3 {
+        flex-direction: column;
+    }
+} */
